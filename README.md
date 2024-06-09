@@ -2,10 +2,11 @@
 
 
 - This is a simple web Todo list application built with React.js .
-- In products section it fetch data than a json-server api (its also in localhost , its in database.json).
+- In tasks section it fetch data than a json-server api (its also in localhost , its in database.json).
+- User can change or delete the tasks.
 - For service section it fetch data from external API. 
-- It's using tailwindCss for styling. 
-- Routing is provided with react-router-dom packege (see Route/router.jsx).
+- It's using tailwind-css for styling. 
+- Routing is provided with react-router-dom packege.
 - Images : 
 
 ![r1](src/assets/images/pic1.png)
