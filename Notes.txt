@@ -1,0 +1,11 @@
+to do : 
+
+1- lazy loading 
+2- spinner
+3- loader in routes 
+4- redirection (no Home page)
+5- comments for each section 
+
+problems : 
+1- modal select last task 
+2- first time fetching !

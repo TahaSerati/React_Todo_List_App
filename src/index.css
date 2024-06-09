@@ -1,0 +1,159 @@
+/* fonts */
+@font-face {
+  font-family: 'vazir-medium';
+  src: url('../src/assets/fonts/Vazir-Medium.ttf'), format('ttf');
+}
+
+@font-face {
+  font-family: 'iranian-sans';
+  src: url('../src/assets/fonts/Iranian Sans.ttf'), format('ttf');
+}
+
+/* basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'vazir-medium'; */
+  font-family: 'iranian-sans';
+  background-color: #9e9e9e;
+  direction: rtl;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.black-dark-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.704);
+}
+
+.width-height-screen {
+  position: fixed; /* Changed from absolute to fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.center-dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.grid-services {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 300px)); 
+  gap: 20px;
+}
+
+
+
+.btn-red {
+  @apply bg-rose-500 text-white text-sm py-2 px-5 rounded-md hover:bg-rose-700 border border-black;
+}
+
+.btn-green {
+  @apply bg-green-500 text-white text-sm py-2 px-5 rounded-md hover:bg-green-700 border border-black;
+}
+
+.btn-yellow {
+  @apply bg-yellow-500 text-white text-sm py-2 px-5 rounded-md hover:bg-yellow-700 border border-black;
+}
+
+.black-light-shadow {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+
+
+/* spinner css  */
+.lds-ellipsis,
+.lds-ellipsis div {
+  box-sizing: border-box;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
